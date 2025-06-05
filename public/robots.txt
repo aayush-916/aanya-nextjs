@@ -1,0 +1,8 @@
+User-agent: *  
+Disallow: /admin  
+Disallow: /feed 
+Disallow: /checkout  
+Disallow: /  
+Allow: /
+
+Sitemap: https://aanyasolutions.com/sitemap.xml

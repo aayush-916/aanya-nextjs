@@ -1,0 +1,140 @@
+.backoffice-container {
+    padding: 60px 25px;
+    max-width: 1200px;
+    margin: auto;
+    background: linear-gradient(135deg, #f8f9fa, #e0f7ff);
+    animation: fadeIn 1s ease;
+  }
+  
+  .backoffice-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #093e66;
+    margin-bottom: 30px;
+    animation: slideDown 0.8s ease-out;
+  }
+  
+  .backoffice-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .backoffice-subtitle {
+    font-size: 1.8rem;
+    color: #0a3a63;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 5px solid #009fe3;
+    padding-left: 15px;
+    animation: fadeInLeft 0.7s ease;
+  }
+  
+  .backoffice-text {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 25px;
+    animation: fadeInUp 0.7s ease;
+  }
+  
+  .backoffice-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .feature-box {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    padding: 25px;
+    flex: 1 1 250px;
+    max-width: 280px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-icon {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .task-icon {
+    color: #ff6b6b;
+  }
+  
+  .user-icon {
+    color: #4ecdc4;
+  }
+  
+  .data-icon {
+    color: #5f27cd;
+  }
+  
+  .chart-icon {
+    color: #1dd1a1;
+  }
+  
+  .feature-title {
+    font-size: 1.3rem;
+    color: #093e66;
+    margin-bottom: 10px;
+  }
+  
+  .feature-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .backoffice-title {
+      font-size: 2rem;
+    }
+  
+    .backoffice-subtitle {
+      font-size: 1.4rem;
+    }
+  
+    .backoffice-text {
+      font-size: 1rem;
+    }
+  
+    .feature-box {
+      max-width: 100%;
+    }
+  }
+  
