@@ -2,24 +2,19 @@ import '../styles/About.css';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
-import Head from 'next/head';
+export const metadata = {
+  title: 'About Us | Back Office & Inventory Management Services - Aanya Solutions',
+  description: 'Learn more about Aanya Solutions – your trusted partner for professional back office work, inventory management, data entry, and report creation services in the USA.',
+  keywords: 'back office work company in India, inventory management company, data entry services, report creation services, low-cost back office support, Aanya Solutions',
+  robots: 'index, follow',
+  alternates: {
+    canonical: 'https://www.aanyasolutions.com/about',
+  },
+};
 
 const About = () => {
   return (
     <section className="about-section">
-      <Head>
-        <title>About Us | Back Office & Inventory Management Services - Aanya Solutions</title>
-        <meta
-          name="description"
-          content="Learn more about Aanya Solutions – your trusted partner for professional back office work, inventory management, data entry, and report creation services in the USA."
-        />
-        <meta
-          name="keywords"
-          content="back office work company in India, inventory management company, data entry services, report creation services, low-cost back office support, Aanya Solutions"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.aanyasolutions.com/about" />
-      </Head>
 
       <Nav />
 

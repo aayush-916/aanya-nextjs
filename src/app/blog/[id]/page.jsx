@@ -2,36 +2,50 @@ import { blogs } from '../../blogs';
 import Whatsapp from '../../components/Whatsapp';
 import Footer from '../../components/Footer';
 import Nav from '../../components/Nav';
-import Head from 'next/head'; // ✅ Import Head
 
-// Static generation helper
+// ✅ Ensure static generation
+export const dynamic = 'force-static';
+
+// ✅ generateStaticParams
 export function generateStaticParams() {
   return blogs.map((blog) => ({
     id: blog.id.toString(),
   }));
 }
 
-// Main page component
-const SingleBlogPage = ({ params }) => {
-  const { id } = params;
+// ✅ Clean generateMetadata with awaited params
+export async function generateMetadata({ params }) {
+  const { id } = await Promise.resolve(params); // ✅ suppress warning
+  const blog = blogs.find((b) => b.id === id);
+
+  if (!blog) return {};
+
+  return {
+    title: blog.metaTitle || blog.title,
+    description: blog.metaDescription || blog.description,
+    keywords: blog.metaKeywords,
+    openGraph: {
+      title: blog.metaTitle || blog.title,
+      description: blog.metaDescription || blog.description,
+      images: [blog.image],
+      type: 'article',
+    },
+    alternates: {
+      canonical: `https://www.aanyasolutions.com/blog/${id}`,
+    },
+    metadataBase: new URL('https://www.aanyasolutions.com'),
+  };
+}
+
+// ✅ Blog Page Component
+const SingleBlogPage = async ({ params }) => {
+  const { id } = await Promise.resolve(params); // ✅ suppress warning
   const blog = blogs.find((b) => b.id === id);
 
   if (!blog) return <h2>Blog not found</h2>;
 
   return (
     <>
-      <Head>
-        <title>{blog.metaTitle || blog.title}</title>
-        <meta name="description" content={blog.metaDescription || blog.description} />
-        {blog.metaKeywords && <meta name="keywords" content={blog.metaKeywords} />}
-        <meta property="og:title" content={blog.metaTitle || blog.title} />
-        <meta property="og:description" content={blog.metaDescription || blog.description} />
-        <meta property="og:image" content={blog.image} />
-        <meta property="og:type" content="article" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href={`https://www.aanyasolutions.com/blog/${blog.id}`} />
-    </Head>
-
       <Nav />
       <div className="single-blog">
         <h1>{blog.title}</h1>

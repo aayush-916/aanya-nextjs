@@ -697,7 +697,7 @@ export const blogs = [
     </ol>
     
     <h2>Platforms We Support</h2>
-    <p>We work across various inventory and ERP platforms commonly used in the U.S. retail and warehouse sectors:</p>
+    <p>We can work across various inventory and ERP platforms commonly used in the U.S. retail and warehouse sectors:</p>
     <ul>
       <li>Infios (Retail Vantage)</li>
       <li>NetSuite, Odoo, Zoho Inventory</li>

@@ -3,7 +3,17 @@ import BlogCard from '../components/BlogCard';
 import Nav from '../components/Nav';
 import Whatsapp from '../components/Whatsapp';
 import Footer from '../components/Footer';
-import Head from 'next/head';
+
+
+export const metadata = {
+  title: 'Tech Insights & Business Solutions Blog | Aanya Solutions',
+  description: 'Explore the Aanya Solutions blog for expert insights on back office services, business process optimization, technology trends, and strategies to drive growth and efficiency in your organization.',
+  keywords: 'back office services, data entry, record maintenance, data audits, data analysis, business support India, Aanya Solutions',
+  robots: 'index, follow',
+  alternates: {
+    canonical: 'https://www.aanyasolutions.com/blogs',
+  },
+};
 
 const BlogPage = () => {
   // Reverse the blogs array to show the latest blog first
@@ -11,20 +21,6 @@ const BlogPage = () => {
 
   return (
     <>
-
-<Head>
-        <title>Tech Insights & Business Solutions Blog | Aanya Solutions</title>
-        <meta
-          name="description"
-          content="Explore the Aanya Solutions blog for expert insights on back office services, business process optimization, technology trends, and strategies to drive growth and efficiency in your organization."
-        />
-        <meta
-          name="keywords"
-          content="back office services, data entry, record maintenance, data audits, data analysis, business support India, Aanya Solutions"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.aanyasolutions.com/blogs" />
-      </Head>
 
 
       <Nav />

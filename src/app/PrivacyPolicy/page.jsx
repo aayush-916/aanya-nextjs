@@ -1,6 +1,5 @@
 'use client';
 
-import Head from 'next/head';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import '../components/PrivacyPolicy.css';
@@ -9,19 +8,6 @@ import Whatsapp from '../components/Whatsapp';
 function PrivacyPolicy() {
   return (
     <>
-      <Head>
-        <title>Privacy Policy | Aanya Solutions</title>
-        <meta
-          name="description"
-          content="Read our Privacy Policy to understand how Aanya Solutions collects, uses, and protects your personal information while you use our services."
-        />
-        <meta
-          name="keywords"
-          content="privacy policy, data protection, personal information, Aanya Solutions privacy, user data security"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.aanyasolutions.com/privacypolicy" />
-      </Head>
 
       <Nav />
 

@@ -1,6 +1,5 @@
 'use client';
 
-import Head from 'next/head';
 import Image from 'next/image';
 import '../components/ServicesPage/BackOfficeDetail.css';
 import { FaTasks, FaUserCheck, FaDatabase, FaChartLine } from 'react-icons/fa';
@@ -11,19 +10,7 @@ import Whatsapp from '../components/Whatsapp';
 const BackOfficeDetail = () => {
   return (
     <>
-      <Head>
-        <title>Back Office Services | Efficient Data Entry & Audit - Aanya Solutions</title>
-        <meta
-          name="description"
-          content="Aanya Solutions offers professional back office services including data entry, record maintenance, audits, and analysis for businesses in the USA. Reliable and cost-effective support from India."
-        />
-        <meta
-          name="keywords"
-          content="back office services, data entry, record maintenance, data audits, data analysis, business support India, Aanya Solutions"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.aanyasolutions.com/BackOfficeDetail" />
-      </Head>
+      
 
       <Nav />
       <div className="backoffice-container">

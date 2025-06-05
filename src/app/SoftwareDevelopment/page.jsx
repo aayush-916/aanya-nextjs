@@ -1,6 +1,4 @@
 'use client';
-
-import Head from 'next/head';
 import React from 'react';
 import '../components/ServicesPage/SoftwareDevelopment.css'
 import { FaLaptopCode, FaServer, FaDatabase, FaCogs } from 'react-icons/fa';
@@ -8,22 +6,10 @@ import Nav from '../components/Nav';
 import Whatsapp from '../components/Whatsapp';
 import Footer from '../components/Footer';
 
+
 const SoftwareDevelopment = () => {
   return (
     <>
-      <Head>
-        <title>Custom Software Development Services | Aanya Solutions</title>
-        <meta
-          name="description"
-          content="Aanya Solutions offers scalable, secure, and custom software development services tailored for startups and enterprises. Improve efficiency, automate tasks, and scale effortlessly."
-        />
-        <meta
-          name="keywords"
-          content="custom software development, business automation, ERP software, CRM development, software development services USA, Aanya Solutions"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.aanyasolutions.com/softwaredevelopment" />
-      </Head>
 
       <Nav />
 

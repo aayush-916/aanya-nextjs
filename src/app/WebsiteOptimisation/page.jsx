@@ -1,29 +1,16 @@
 'use client';
 
 import React from 'react';
-import Head from 'next/head';
 import { FaChartLine, FaSearch, FaRocket, FaMobileAlt } from 'react-icons/fa';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import Whatsapp from '../components/Whatsapp';
 import '../components/ServicesPage/WebsiteOptimisation.css'
 
+
 const WebsiteOptimisation = () => {
   return (
     <>
-      <Head>
-        <title>Website Optimization Services | Speed, SEO & UX – Aanya Solutions</title>
-        <meta
-          name="description"
-          content="Enhance website performance with Aanya Solutions. We boost site speed, SEO, responsiveness, and UX to help you rank higher and convert better."
-        />
-        <meta
-          name="keywords"
-          content="website optimization, SEO services, site speed improvement, responsive web design, UX optimization, website performance, Aanya Solutions"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.aanyasolutions.com/websiteoptimisation" />
-      </Head>
 
       <Nav />
 

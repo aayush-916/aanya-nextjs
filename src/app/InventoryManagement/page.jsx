@@ -1,6 +1,5 @@
 'use client';
 
-import Head from 'next/head';
 import Image from 'next/image';
 import '../components/ServicesPage/InventoryManagement.css';
 import { FaBoxes, FaClipboardList, FaTruckLoading, FaChartBar } from 'react-icons/fa';
@@ -11,19 +10,6 @@ import Whatsapp from '../components/Whatsapp';
 const InventoryManagement = () => {
   return (
     <>
-      <Head>
-        <title>Inventory Management Services | Optimize Stock & Fulfillment - Aanya Solutions</title>
-        <meta
-          name="description"
-          content="Aanya Solutions provides reliable inventory management services including tracking, purchasing, and audit analysis. Streamline your supply chain with our expert support."
-        />
-        <meta
-          name="keywords"
-          content="inventory management services, inventory tracking, order fulfillment, inventory audit, stock optimization, inventory solutions India, Aanya Solutions"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.aanyasolutions.com/inventorymanagement" />
-      </Head>
 
       <Nav />
 

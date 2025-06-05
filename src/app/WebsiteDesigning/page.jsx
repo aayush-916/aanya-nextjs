@@ -1,6 +1,5 @@
 'use client';
 
-import Head from 'next/head';
 import React from 'react';
 import '../components/ServicesPage/WebsiteDesigning.css';
 import { FaLaptopCode, FaCogs, FaEdit } from 'react-icons/fa';
@@ -8,22 +7,10 @@ import Whatsapp from '../components/Whatsapp';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 
+
 const WebsiteDesigning = () => {
   return (
     <>
-      <Head>
-        <title>Website Designing Services | Custom Web Design Company – Aanya Solutions</title>
-        <meta
-          name="description"
-          content="Build a powerful digital presence with Aanya Solutions’ website designing services. We deliver custom web development, CMS integration, and responsive design tailored to your business needs."
-        />
-        <meta
-          name="keywords"
-          content="website designing, custom web development, responsive web design, CMS integration, professional web design services, Aanya Solutions"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.aanyasolutions.com/websitedesigning" />
-      </Head>
 
       <Nav />
 

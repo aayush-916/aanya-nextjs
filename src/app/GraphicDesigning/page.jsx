@@ -1,6 +1,6 @@
 'use client';
 
-import Head from 'next/head';
+
 import Image from 'next/image';
 import '../components/ServicesPage/GraphicDesigning.css';
 import { FaPaintBrush, FaChartPie, FaMobileAlt } from 'react-icons/fa';
@@ -11,19 +11,6 @@ import Whatsapp from '../components/Whatsapp';
 const GraphicDesigning = () => {
   return (
     <>
-      <Head>
-        <title>Graphic Designing Services | Logo, Infographic & Social Media Design - Aanya Solutions</title>
-        <meta
-          name="description"
-          content="Aanya Solutions offers professional graphic design services including branding, logo design, infographics, and social media creatives to help businesses grow visually."
-        />
-        <meta
-          name="keywords"
-          content="graphic designing services, logo design, brand identity, infographic design, social media graphics, creative agency India, Aanya Solutions"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.aanyasolutions.com/GraphicDesigning" />
-      </Head>
 
       <Nav />
 
