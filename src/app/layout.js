@@ -33,6 +33,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${nunitoSans.variable}`}>
+
       <body
         className={`antialiased ${geistMono.variable} ${geistSans.variable} font-sans`}
         style={{ fontFamily: "var(--font-nunito-sans)" }}
@@ -58,6 +59,38 @@ export default function RootLayout({ children }) {
           `,
           }}
         />
+
+<script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Aanya Solutions",
+              "url": "https://aanyasolutions.com",
+              "logo": "https://aanyasolutions.com/logo.png", // replace with actual logo
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+918368859076",
+                "contactType": "Customer Support",
+                "areaServed": "IN",
+                "availableLanguage": "English"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ghaziabad",
+                "addressRegion": "Uttar Pradesh",
+                "addressCountry": "IN"
+              },
+              "sameAs": [
+                "https://www.facebook.com/aanyasolutions",
+                "https://www.linkedin.com/company/aanyasolutions",
+                "https://twitter.com/aanyasolutions"
+              ]
+            })
+          }}
+        />
+
       </body>
     </html>
   );

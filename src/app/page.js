@@ -20,6 +20,9 @@ export const metadata = {
   keywords:
     "Aanya Solutions, Back Office Services USA, Inventory Management Company India, Data Entry Services, Report Creation Services, Graphic Designing, Website Development, Software Development, Website Optimization, Remote Back Office Support, IT Solutions USA, Web Design USA, App Development USA, Custom Software USA, Digital Marketing Services USA, Professional IT Company",
   authors: [{ name: "Aanya Solutions" }],
+  alternates: {
+    canonical: 'https://www.aanyasolutions.com/',
+  },
 };
 
 

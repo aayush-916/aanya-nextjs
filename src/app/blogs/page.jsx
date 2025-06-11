@@ -26,7 +26,7 @@ const BlogPage = () => {
       <Nav />
 
       <div className="blog-list">
-        <h1>Our Blogs</h1>
+        <h2>Our Blogs</h2>
         <div className="grid">
           {sortedBlogs.map((blog) => (
             <BlogCard key={blog.id} blog={blog} />

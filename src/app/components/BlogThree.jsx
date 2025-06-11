@@ -7,7 +7,7 @@ const BlogThree = () => {
 
   return (
     <div className="blog-list">
-      <h1>Our latest blog</h1>
+      <h2>Our latest blog</h2>
       <div className="grid">
         {latestThreeBlogs.map((blog) => (
           <BlogCard key={blog.id} blog={blog} />
